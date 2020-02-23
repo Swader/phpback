@@ -25,5 +25,9 @@
     </label>
     <button type="submit" class="btn btn-primary"><?php echo $lang['label_log_in']; ?></button> <a href="<?php echo base_url() . 'home/register';?>"><span style="padding-left:10px"><?php echo $lang['text_create_an_account']; ?></span></a>
   </form>
+  <div style="margin-top:10px"><button type="submit" class="btn btn-primary" id="web3login">Log in with Web3</button></div>
+  <div>
+    <select name="web3account" id="web3accounts" style="display:none"></select>
+    <button type="submit" class="btn btn-primary" id="web3loginConfirm" style="display:none">Confirm login</button>
 </div>
 <div class="col-md-2"></div>

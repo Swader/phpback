@@ -1,0 +1,8 @@
+{
+  "name": "phpback-original",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "https://github.com/swader/phpback",
+  "author": "Bruno Skvorc <bruno@bitfalls.com>",
+  "license": "MIT"
+}

@@ -10,7 +10,10 @@
     <script src="<?php echo base_url(); ?>public/js/flatui-radio.js"></script>
     <script src="<?php echo base_url(); ?>public/js/jquery.tagsinput.js"></script>
     <script src="<?php echo base_url(); ?>public/js/jquery.placeholder.js"></script>
+    <script src="<?php echo base_url(); ?>public/js/bundle.js"></script>
     <script src="<?php echo base_url(); ?>public/bootstrap/js/application.js"></script>
+    <script src="<?php echo base_url(); ?>public/js/application.js"></script>
+
     <script>
         $('.popover-with-html').popover({ html : true });
         $('.contentdiv').css('width', '100%').css('width', '-=400px');

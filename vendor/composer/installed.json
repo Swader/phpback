@@ -1,25 +1,31 @@
 [
     {
-        "name": "psr/log",
-        "version": "1.0.0",
-        "version_normalized": "1.0.0.0",
+        "name": "desarrolla2/cache",
+        "version": "1.8.1",
+        "version_normalized": "1.8.1.0",
         "source": {
             "type": "git",
-            "url": "https://github.com/php-fig/log.git",
-            "reference": "fe0936ee26643249e916849d48e3a51d5f5e278b"
+            "url": "https://github.com/desarrolla2/Cache.git",
+            "reference": "b915777bfc63636a074a8be9600f40d288abb2ac"
         },
         "dist": {
             "type": "zip",
-            "url": "https://api.github.com/repos/php-fig/log/zipball/fe0936ee26643249e916849d48e3a51d5f5e278b",
-            "reference": "fe0936ee26643249e916849d48e3a51d5f5e278b",
+            "url": "https://api.github.com/repos/desarrolla2/Cache/zipball/b915777bfc63636a074a8be9600f40d288abb2ac",
+            "reference": "b915777bfc63636a074a8be9600f40d288abb2ac",
             "shasum": ""
         },
-        "time": "2012-12-21 11:40:51",
+        "require": {
+            "php": ">=5.3.3"
+        },
+        "require-dev": {
+            "predis/predis": "*"
+        },
+        "time": "2015-10-22T09:10:49+00:00",
         "type": "library",
         "installation-source": "dist",
         "autoload": {
-            "psr-0": {
-                "Psr\\Log\\": ""
+            "psr-4": {
+                "Desarrolla2\\Cache\\": "src/"
             }
         },
         "notification-url": "https://packagist.org/downloads/",
@@ -28,15 +34,22 @@
         ],
         "authors": [
             {
-                "name": "PHP-FIG",
-                "homepage": "http://www.php-fig.org/"
+                "name": "Daniel González",
+                "homepage": "http://desarrolla2.com/"
             }
         ],
-        "description": "Common interface for logging libraries",
+        "description": "Provides an cache interface for several adapters Apc, Apcu, File, Mongo, Memcache, Memcached, Mysql, Mongo, Redis is supported. New adapters is comming!",
+        "homepage": "https://github.com/desarrolla2/Cache/",
         "keywords": [
-            "log",
-            "psr",
-            "psr-3"
+            "apc",
+            "apcu",
+            "cache",
+            "file",
+            "memcache",
+            "memcached",
+            "mongo",
+            "mysql",
+            "redis"
         ]
     },
     {
@@ -81,7 +94,7 @@
             "ruflin/elastica": "Allow sending log messages to an Elastic Search server",
             "videlalvaro/php-amqplib": "Allow sending log messages to an AMQP server using php-amqplib"
         },
-        "time": "2014-12-29 21:29:35",
+        "time": "2014-12-29T21:29:35+00:00",
         "type": "library",
         "extra": {
             "branch-alias": {
@@ -114,32 +127,26 @@
         ]
     },
     {
-        "name": "desarrolla2/cache",
-        "version": "1.8.1",
-        "version_normalized": "1.8.1.0",
+        "name": "psr/log",
+        "version": "1.0.0",
+        "version_normalized": "1.0.0.0",
         "source": {
             "type": "git",
-            "url": "https://github.com/desarrolla2/Cache.git",
-            "reference": "b915777bfc63636a074a8be9600f40d288abb2ac"
+            "url": "https://github.com/php-fig/log.git",
+            "reference": "fe0936ee26643249e916849d48e3a51d5f5e278b"
         },
         "dist": {
             "type": "zip",
-            "url": "https://api.github.com/repos/desarrolla2/Cache/zipball/b915777bfc63636a074a8be9600f40d288abb2ac",
-            "reference": "b915777bfc63636a074a8be9600f40d288abb2ac",
+            "url": "https://api.github.com/repos/php-fig/log/zipball/fe0936ee26643249e916849d48e3a51d5f5e278b",
+            "reference": "fe0936ee26643249e916849d48e3a51d5f5e278b",
             "shasum": ""
         },
-        "require": {
-            "php": ">=5.3.3"
-        },
-        "require-dev": {
-            "predis/predis": "*"
-        },
-        "time": "2015-10-22 09:10:49",
+        "time": "2012-12-21T11:40:51+00:00",
         "type": "library",
         "installation-source": "dist",
         "autoload": {
-            "psr-4": {
-                "Desarrolla2\\Cache\\": "src/"
+            "psr-0": {
+                "Psr\\Log\\": ""
             }
         },
         "notification-url": "https://packagist.org/downloads/",
@@ -148,22 +155,15 @@
         ],
         "authors": [
             {
-                "name": "Daniel González",
-                "homepage": "http://desarrolla2.com/"
+                "name": "PHP-FIG",
+                "homepage": "http://www.php-fig.org/"
             }
         ],
-        "description": "Provides an cache interface for several adapters Apc, Apcu, File, Mongo, Memcache, Memcached, Mysql, Mongo, Redis is supported. New adapters is comming!",
-        "homepage": "https://github.com/desarrolla2/Cache/",
+        "description": "Common interface for logging libraries",
         "keywords": [
-            "apc",
-            "apcu",
-            "cache",
-            "file",
-            "memcache",
-            "memcached",
-            "mongo",
-            "mysql",
-            "redis"
+            "log",
+            "psr",
+            "psr-3"
         ]
     },
     {
@@ -187,7 +187,7 @@
         "require-dev": {
             "simpletest/simpletest": "1.1.*"
         },
-        "time": "2015-05-02 19:28:54",
+        "time": "2015-05-02T19:28:54+00:00",
         "bin": [
             "bin/semver",
             "bin/update-versions"
@@ -244,7 +244,7 @@
         "require-dev": {
             "phpunit/phpunit": "4.5.*"
         },
-        "time": "2015-02-28 11:11:52",
+        "time": "2015-02-28T11:11:52+00:00",
         "type": "library",
         "installation-source": "dist",
         "autoload": {

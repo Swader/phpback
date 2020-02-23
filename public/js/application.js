@@ -110,5 +110,32 @@ String.prototype.repeat = function(num) {
     window.prettyPrint && prettyPrint();
     
   });
+
+  function initWeb3Login() {
+    dappex.web3Enable().then(function(){
+      if (!dappex.isWeb3Injected) {
+        alert("You need a Web3 enabled browser to log in with Web3. The easiest solution is probably to install the Polkadot{js} extension.");
+      } else {
+
+        dappex.web3Accounts().then( async (accounts) => {
+          showPicker(accounts);
+        } );
+      }
+    });
+  }
+
+  function showPicker(accounts) {
+    let options = '';
+    accounts.forEach(element => {
+      options += '<option value="'+ element.address +'">'+ element.meta.name + ' - ' + element.address +'</option>';
+    });
+    let selector = document.querySelector("#web3accounts")
+    selector.innerHTML = options;
+    selector.style.display = "inline-block";
+    document.querySelector("#web3loginConfirm").style.display = 'block';
+  }
+
+  document.querySelector("#web3login").addEventListener('click', initWeb3Login);
+  document.querySelector("#web3loginConfirm").addEventListener('click', checkUser);
   
 })(jQuery);

@@ -62,6 +62,10 @@
 <?php endif;?>
     <div style="margin-top:10px"><button type="submit" class="btn btn-primary"><?php echo $lang['label_registration']; ?></button></div>
   </form>
+  <div style="margin-top:10px"><button type="submit" class="btn btn-primary" id="web3login">Register with Web3</button></div>
+  <div>
+    <select name="web3account" id="web3accounts" style="display:none"></select>
+    <button type="submit" class="btn btn-primary" id="web3loginConfirm" style="display:none">Confirm Registration</button>
 </div>
 
 <script>
